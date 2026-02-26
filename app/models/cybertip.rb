@@ -1,0 +1,2 @@
+class Cybertip < ApplicationRecord
+end

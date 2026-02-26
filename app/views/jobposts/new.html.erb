@@ -1,0 +1,11 @@
+<% content_for :title, "New jobpost" %>
+
+<h1>New jobpost</h1>
+
+<%= render "form", jobpost: @jobpost %>
+
+<br>
+
+<div>
+  <%= link_to "Back to jobposts", jobposts_path %>
+</div>

@@ -1,0 +1,2 @@
+module CybertipsHelper
+end

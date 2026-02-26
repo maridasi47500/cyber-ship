@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @cybertip %>
+
+<div>
+  <%= link_to "Edit this cybertip", edit_cybertip_path(@cybertip) %> |
+  <%= link_to "Back to cybertips", cybertips_path %>
+
+  <%= button_to "Destroy this cybertip", @cybertip, method: :delete %>
+</div>

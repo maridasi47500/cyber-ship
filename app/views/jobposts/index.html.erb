@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Jobposts" %>
+
+<h1>Jobposts</h1>
+<p>
+dans ton profile tu peux selectionner 1 à plusieurs jobs, et poster à propos de ce job avec des images, sur ce qu'est ce job/ma nouvelle position dans ce job.
+</p>
+
+<div id="jobposts">
+  <% @jobposts.each do |jobpost| %>
+    <%= render jobpost %>
+    <p>
+      <%= link_to "Show this jobpost", jobpost %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New jobpost", new_jobpost_path %>

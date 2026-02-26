@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "News" %>
+
+<h1>News du musée de la ville</h1>
+<p>
+ici on peut ajouter des news from TV /radio/ news du  musée des touristes de la ville qui peut contenir si c'est bien/mal bon/mauvais de poster des trucs.
+si c'est safe/unsafe.
+</p>
+
+<div id="news">
+  <% @news.each do |news| %>
+    <%= render news %>
+    <p>
+      <%= link_to "Show this news", news %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New news", new_news_path %>

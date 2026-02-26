@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Cybertips" %>
+
+<h1>Cybertips</h1>
+
+<div id="cybertips">
+  <% @cybertips.each do |cybertip| %>
+    <%= render cybertip %>
+    <p>
+      <%= link_to "Show this cybertip", cybertip %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New cybertip", new_cybertip_path %>
